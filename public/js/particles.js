@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.speedY = (Math.random() - 0.5) * 0.5;
       this.opacity = Math.random() * 0.5 + 0.1;
       this.targetOpacity = this.opacity;
-      this.hue = Math.random() * 30 + 35; // Gold range
+      this.hue = Math.random() * 20 + 210; // Blue range
       this.lightness = Math.random() * 20 + 60;
     }
 
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(212, 168, 83, ${opacity})`;
+          ctx.strokeStyle = `rgba(59, 130, 246, ${opacity})`;
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
