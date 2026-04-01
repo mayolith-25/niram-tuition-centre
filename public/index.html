@@ -3,45 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Niram Tuition Centre. Improve Your Child’s Marks by 20–40% in Just 3 Months. Best coaching in Tamil Nadu.">
-  <title>Niram Tuition Centre — Premium Coaching</title>
-  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
-  <!-- Modern Font Pairing: Poppins (Headings) & Inter (Body) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Niram Tuition Centre. Building Strong Academic Foundations for Lifelong Success. Legacy, Discipline, Excellence.">
+  <title>Niram Tuition Centre — A Tradition of Excellence</title>
+  
+  <!-- Classic Typography: Playfair Display for headings & Inter for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <style>
-    /* CSS Variables & Theme */
+    /* CSS Variables & Royal Theme */
     :root {
-      --font-heading: 'Poppins', sans-serif;
+      --font-heading: 'Playfair Display', serif;
       --font-body: 'Inter', sans-serif;
       
-      --color-cream: #FDF8F0;
-      --color-cream-dark: #F5EDD8;
-      --color-saffron: #E8891A;
-      --color-teal: #0F6E56;
-      --color-teal-dark: #085041;
+      --color-navy: #0B1F3A;
+      --color-maroon: #5A0F1C;
+      --color-gold: #C9A14A;
+      --color-gold-hover: #D4B062;
+      --color-cream: #F5F1E8;
+      --color-white: #FFFFFF;
+      --color-text-dark: #1A2433;
+      --color-text-body: #4A5568;
       
-      --color-text-primary: #1F2937;
-      --color-text-secondary: #4B5563;
-      --color-text-muted: #6B7280;
-      
-      --glass-bg: rgba(255, 255, 255, 0.85);
-      --glass-border: rgba(255, 255, 255, 0.4);
-      --glass-shadow: 0 8px 32px rgba(15, 110, 86, 0.08);
-      
-      --gradient-primary: linear-gradient(135deg, #0F6E56 0%, #0a4f3e 100%);
-      --gradient-accent: linear-gradient(135deg, #E8891A 0%, #d47a14 100%);
-      
-      --nav-height: 80px;
+      --border-thin: 1px solid rgba(11, 31, 58, 0.15);
+      --border-gold: 1px solid var(--color-gold);
+      --nav-height: 90px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; font-size: 16px; }
+    
     body {
       font-family: var(--font-body);
-      color: var(--color-text-primary);
+      color: var(--color-text-body);
       background-color: var(--color-cream);
-      line-height: 1.6;
+      line-height: 1.7;
       overflow-x: hidden;
     }
 
@@ -49,222 +44,199 @@
     ul { list-style: none; }
     img { max-width: 100%; height: auto; display: block; }
     
-    h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-teal-dark); line-height: 1.2; }
-    
-    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-    
-    /* Utility Classes */
-    .glass-card {
-      background: var(--glass-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--glass-border);
-      border-radius: 20px;
-      box-shadow: var(--glass-shadow);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .glass-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(15, 110, 86, 0.12);
+    h1, h2, h3, h4, h5, h6 { 
+      font-family: var(--font-heading); 
+      color: var(--color-navy); 
+      line-height: 1.25; 
+      font-weight: 600; 
+      letter-spacing: 0.02em; 
     }
     
+    .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+    
+    /* Layout Defaults */
+    section { padding: 5rem 0; position: relative; }
+    .section-title { text-align: center; margin-bottom: 3.5rem; }
+    .section-title h2 { font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--color-navy); }
+    .section-title p { font-size: 1.1rem; color: var(--color-text-body); max-width: 650px; margin: 0 auto; font-family: var(--font-body); font-weight: 400; }
+    .divider { width: 60px; height: 2px; background-color: var(--color-gold); margin: 1.5rem auto; }
+    
+    /* Button Styles - Solid, Formal, Elegant */
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
-      padding: 0.875rem 2rem; border-radius: 50px; font-family: var(--font-heading);
-      font-weight: 600; font-size: 1.05rem; cursor: pointer; transition: all 0.3s ease;
-      border: none;
+      padding: 0.85rem 2.25rem; font-family: var(--font-body); font-weight: 500; 
+      font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase;
+      letter-spacing: 1px; border-radius: 2px;
     }
-    .btn-primary { background: var(--gradient-accent); color: white; box-shadow: 0 4px 15px rgba(232, 137, 26, 0.3); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(232, 137, 26, 0.4); }
-    .btn-whatsapp { background: #25D366; color: white; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
-    .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); }
-    .btn-outline { border: 2px solid var(--color-teal); color: var(--color-teal); background: transparent; }
-    .btn-outline:hover { background: var(--color-teal); color: white; }
-
-    .section-title { text-align: center; margin-bottom: 3rem; }
-    .section-title h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--color-teal-dark); }
-    .section-title p { font-size: 1.125rem; color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; }
-    .highlight { color: var(--color-saffron); }
+    .btn-maroon { background-color: var(--color-maroon); color: var(--color-white); border: 1px solid var(--color-maroon); }
+    .btn-maroon:hover { background-color: transparent; color: var(--color-maroon); }
     
-    /* Navbar */
+    .btn-navy { background-color: var(--color-navy); color: var(--color-white); border: 1px solid var(--color-navy); }
+    .btn-navy:hover { background-color: transparent; color: var(--color-navy); }
+    
+    .btn-outline-gold { background-color: transparent; color: var(--color-gold); border: 1px solid var(--color-gold); }
+    .btn-outline-gold:hover { background-color: var(--color-gold); color: var(--color-white); }
+    
+    .btn-outline-navy { background-color: transparent; color: var(--color-navy); border: 1px solid var(--color-navy); }
+    .btn-outline-navy:hover { background-color: var(--color-navy); color: var(--color-white); }
+
+    /* Elegant Navbar */
     .navbar {
       position: fixed; top: 0; left: 0; width: 100%; height: var(--nav-height);
-      background: rgba(253, 248, 240, 0.85); backdrop-filter: blur(10px);
-      z-index: 1000; transition: all 0.3s ease; border-bottom: 1px solid rgba(15, 110, 86, 0.05);
+      background: var(--color-white); z-index: 1000; transition: all 0.3s ease; 
+      border-bottom: 3px solid var(--color-navy); box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
-    .navbar.scrolled { background: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
     .navbar .container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
-    .nav-brand { display: flex; align-items: center; gap: 0.75rem; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--color-teal); }
-    .nav-badge { width: 40px; height: 40px; border-radius: 12px; background: var(--gradient-accent); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(232, 137, 26, 0.3); }
-    .nav-links { display: flex; gap: 1.5rem; align-items: center; }
-    .nav-links a { font-weight: 500; font-size: 0.95rem; color: var(--color-text-secondary); }
-    .nav-links a:hover { color: var(--color-saffron); }
-    .mobile-menu-btn { display: none; font-size: 1.5rem; background: none; border: none; color: var(--color-teal); cursor: pointer; }
-
-    /* Hero Section */
-    .hero {
-      padding-top: calc(var(--nav-height) + 4rem);
-      padding-bottom: 4rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: ''; position: absolute; width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(15,110,86,0.08) 0%, rgba(253,248,240,0) 70%);
-      top: -100px; right: -100px; border-radius: 50%; z-index: -1;
-    }
-    .hero::after {
-      content: ''; position: absolute; width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(232,137,26,0.08) 0%, rgba(253,248,240,0) 70%);
-      bottom: -50px; left: -100px; border-radius: 50%; z-index: -1;
-    }
-    .hero-container { display: flex; align-items: center; gap: 4rem; justify-content: center; }
-    .hero-content { flex: 1; max-width: 600px; }
-    .hero-badge {
-      display: inline-block; padding: 0.4rem 1rem; background: rgba(232,137,26,0.1); 
-      color: var(--color-saffron); border-radius: 50px; font-weight: 600; font-size: 0.85rem;
-      margin-bottom: 1.5rem; letter-spacing: 0.5px;
-    }
-    .hero h1 { font-size: clamp(2.5rem, 5vw, 3.8rem); margin-bottom: 1.5rem; font-weight: 800; color: #111827; }
-    .hero p { font-size: 1.15rem; color: var(--color-text-secondary); margin-bottom: 2rem; max-width: 540px; }
-    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
-    .hero-urgency { margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted); display: flex; align-items: center; gap: 0.5rem; }
-    .hero-urgency::before { content: '🔥'; }
-    .hero-image { flex: 1; position: relative; }
-    .hero-img-wrapper {
-      position: relative; border-radius: 24px; overflow: hidden;
-      box-shadow: 0 20px 40px rgba(15, 110, 86, 0.15); border: 8px solid white;
-    }
-    .hero-img-wrapper img { width: 100%; height: 500px; object-fit: cover; }
+    .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
+    .nav-brand-text { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--color-navy); text-transform: uppercase; letter-spacing: 1px;}
+    .nav-crest { width: 45px; height: 45px; border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-maroon); font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; }
     
-    /* Stats Row */
-    .stats-row { margin-top: 4rem; }
-    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .stat-card { text-align: center; padding: 1.5rem; }
-    .stat-card h3 { font-size: 2.5rem; color: var(--color-saffron); margin-bottom: 0.5rem; font-weight: 800; }
-    .stat-card p { font-weight: 500; color: var(--color-text-secondary); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a { font-family: var(--font-body); font-weight: 500; font-size: 0.9rem; color: var(--color-navy); text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links a:hover { color: var(--color-gold); }
+    .mobile-menu-btn { display: none; font-size: 1.5rem; background: none; border: none; color: var(--color-navy); cursor: pointer; }
 
-    /* Results Section */
-    .results-sec { padding: 6rem 0; background: linear-gradient(180deg, var(--color-cream) 0%, white 100%); }
-    .results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-    .result-card { padding: 2rem; text-align: center; }
-    .result-marks { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
-    .mark-box { background: var(--color-cream-dark); padding: 1rem; border-radius: 12px; }
-    .mark-box.after { background: var(--gradient-primary); color: white; }
-    .mark-box span { display: block; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; opacity: 0.8; }
-    .mark-box strong { font-size: 1.8rem; font-family: var(--font-heading); }
-    .mark-arrow { color: var(--color-saffron); font-size: 1.5rem; }
+    /* Hero Section - Royal & Academic */
+    .hero {
+      padding-top: calc(var(--nav-height) + 5rem);
+      padding-bottom: 6rem;
+      background-color: var(--color-white);
+      border-bottom: var(--border-thin);
+    }
+    .hero-container {
+      display: flex; align-items: center; justify-content: space-between; gap: 4rem;
+    }
+    .hero-content { flex: 1; max-width: 600px; text-align: left; }
+    
+    .hero-label {
+      font-family: var(--font-body); text-transform: uppercase; letter-spacing: 2px;
+      color: var(--color-gold); font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 1rem;
+    }
+    
+    .hero h1 { font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 1.5rem; color: var(--color-navy); line-height: 1.2; font-weight: 700; }
+    .hero p { font-size: 1.15rem; color: var(--color-text-body); margin-bottom: 2.5rem; font-family: var(--font-heading); font-style: italic; }
+    
+    .hero-commands { display: flex; gap: 1rem; flex-wrap: wrap; }
+    
+    .hero-image { flex: 0 0 45%; position: relative; }
+    .hero-img-inner {
+      border: 1px solid var(--color-gold); padding: 0.5rem; background-color: var(--color-white);
+    }
+    .hero-img-inner img { width: 100%; height: 450px; object-fit: cover; filter: sepia(10%) contrast(105%); }
 
-    /* USP Section */
-    .usp-sec { padding: 6rem 0; background: var(--color-teal); color: white; position: relative; }
-    .usp-sec .section-title h2 { color: white; }
-    .usp-sec .section-title p { color: rgba(255,255,255,0.8); }
-    .usp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-    .usp-card { background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease; }
-    .usp-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-5px); }
-    .usp-icon { width: 50px; height: 50px; background: rgba(232,137,26,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-saffron); font-size: 1.5rem; }
-    .usp-card h3 { color: white; margin-bottom: 1rem; font-size: 1.25rem; }
-    .usp-card p { color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-bottom: 0; }
+    /* Legacy / Trust - Formal Banner */
+    .legacy-sec { background-color: var(--color-navy); color: var(--color-white); padding: 4rem 0; border-top: 4px solid var(--color-gold); border-bottom: 4px solid var(--color-gold); }
+    .legacy-grid { display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap; gap: 2rem; }
+    .legacy-item h3 { font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-gold); margin-bottom: 0.25rem; font-weight: 400; }
+    .legacy-item p { font-family: var(--font-body); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; color: var(--color-cream); font-weight: 500; }
+    .legacy-divider { width: 1px; background-color: rgba(201, 161, 74, 0.3); }
 
-    /* Courses Section */
-    .courses-sec { padding: 6rem 0; background: var(--color-cream); }
-    .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-    .course-card { padding: 2.5rem; }
-    .course-badge { display: inline-block; padding: 0.3rem 0.8rem; background: var(--color-teal-light); color: var(--color-teal); border-radius: 8px; font-weight: 600; font-size: 0.8rem; margin-bottom: 1rem; }
-    .course-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
-    .course-features { margin: 1.5rem 0; }
-    .course-features li { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.8rem; color: var(--color-text-secondary); font-size: 0.95rem; }
-    .course-features li::before { content: '✓'; color: var(--color-saffron); font-weight: bold; }
+    /* Why Choose Us - Minimal Borders */
+    .features-sec { background-color: var(--color-cream); }
+    .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .feature-card {
+      background-color: var(--color-white); border: var(--border-thin); padding: 2.5rem; 
+      transition: all 0.3s ease; position: relative; border-top: 3px solid transparent;
+    }
+    .feature-card:hover { border-top-color: var(--color-maroon); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(11, 31, 58, 0.04); }
+    .feature-card h3 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-maroon); }
+    .feature-card p { font-size: 0.95rem; margin: 0; line-height: 1.6; }
 
-    /* Trust / Testimonials */
-    .trust-sec { padding: 6rem 0; background: white; }
-    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-    .testi-card { padding: 2rem; }
-    .testi-rating { color: #FBBF24; margin-bottom: 1rem; letter-spacing: 2px; }
-    .testi-text { font-size: 1.1rem; font-style: italic; color: var(--color-text-primary); margin-bottom: 1.5rem; line-height: 1.7; }
-    .testi-author { display: flex; align-items: center; gap: 1rem; }
-    .testi-avatar { width: 45px; height: 45px; border-radius: 50%; background: var(--color-cream-dark); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--color-teal); font-family: var(--font-heading); }
-    .testi-info h4 { font-size: 1rem; margin-bottom: 0.2rem; }
-    .testi-info p { margin: 0; font-size: 0.85rem; color: var(--color-text-muted); }
+    /* Student Results - Bold, Minimal */
+    .results-sec { background-color: var(--color-white); border-top: var(--border-thin); border-bottom: var(--border-thin); }
+    .results-banner { max-width: 800px; margin: 0 auto 3rem; text-align: center; }
+    .results-banner h3 { font-size: 1.75rem; font-style: italic; font-weight: 400; color: var(--color-navy); }
+    
+    .results-list { border-top: var(--border-thin); }
+    .result-row { padding: 1.5rem 0; border-bottom: var(--border-thin); display: flex; justify-content: space-between; align-items: center; }
+    .result-student { font-family: var(--font-heading); font-size: 1.1rem; color: var(--color-navy); font-weight: 600; width: 40%;}
+    .result-metric { font-family: var(--font-body); font-size: 0.95rem; display: flex; align-items: center; gap: 1rem; width: 60%; justify-content: flex-end; }
+    .result-metric span.before { color: var(--color-text-body); }
+    .result-metric span.arrow { color: var(--color-gold); }
+    .result-metric span.after { color: var(--color-maroon); font-weight: 600; font-size: 1.1rem; }
+
+    /* Elegant Courses List */
+    .courses-sec { background-color: var(--color-cream); }
+    .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .course-card { background: var(--color-white); padding: 2rem; border: var(--border-thin); text-align: center; }
+    .course-card h3 { font-size: 1.5rem; color: var(--color-navy); margin-bottom: 0.5rem; }
+    .course-card h4 { font-family: var(--font-body); font-weight: 400; font-size: 0.9rem; color: var(--color-maroon); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; }
+    .course-card ul { text-align: left; margin-bottom: 2rem; }
+    .course-card ul li { padding: 0.4rem 0; border-bottom: 1px dashed rgba(11, 31, 58, 0.1); font-size: 0.9rem; color: var(--color-text-body); }
+    .course-card ul li:last-child { border-bottom: none; }
+
+    /* Testimonials - Classic & Minimal */
+    .testi-sec { background-color: var(--color-navy); color: var(--color-cream); padding: 6rem 0; }
+    .testi-sec .section-title h2 { color: var(--color-white); }
+    .testi-sec .section-title p { color: rgba(245, 241, 232, 0.8); }
+    .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+    .testi-card { border-left: 1px solid var(--color-gold); padding-left: 2.5rem; position: relative; }
+    .testi-card::before { content: '“'; font-family: var(--font-heading); font-size: 4rem; color: var(--color-gold); position: absolute; left: 0; top: -10px; line-height: 1; }
+    .testi-quote { font-family: var(--font-heading); font-style: italic; font-size: 1.15rem; line-height: 1.7; margin-bottom: 1.5rem; color: var(--color-white); }
+    .testi-author { font-family: var(--font-body); font-weight: 600; font-size: 0.95rem; color: var(--color-gold); text-transform: uppercase; letter-spacing: 1px; }
 
     /* FAQ Section */
-    .faq-sec { padding: 6rem 0; background: var(--color-cream); }
-    .faq-container { max-width: 800px; margin: 0 auto; }
-    .faq-item { background: white; border-radius: 12px; margin-bottom: 1rem; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
-    .faq-q { font-family: var(--font-heading); font-weight: 600; color: var(--color-teal-dark); font-size: 1.1rem; }
-    .faq-a { margin-top: 1rem; color: var(--color-text-secondary); font-size: 0.95rem; }
+    .faq-sec { background-color: var(--color-white); }
+    .faq-wrapper { max-width: 800px; margin: 0 auto; border-top: 2px solid var(--color-navy); }
+    .faq-item { border-bottom: 1px solid rgba(11, 31, 58, 0.15); padding: 1.5rem 0; }
+    .faq-q { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; color: var(--color-navy); margin-bottom: 0.75rem; }
+    .faq-a { font-family: var(--font-body); font-size: 0.95rem; color: var(--color-text-body); line-height: 1.6; }
 
-    /* CTA Section */
-    .cta-sec { padding: 6rem 0; text-align: center; background: url('data:image/svg+xml;utf8,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="%230F6E56" opacity="0.05"/></svg>') repeat; }
-    .cta-box { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; background: var(--gradient-primary); border-radius: 24px; color: white; box-shadow: 0 20px 40px rgba(15, 110, 86, 0.2); }
-    .cta-box h2 { color: white; font-size: 2.5rem; margin-bottom: 1.5rem; }
-    .cta-box p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-    .cta-box .btn-primary { background: white; color: var(--color-teal); }
-    .cta-box .btn-primary:hover { background: var(--color-cream); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    /* CTA Section Banner */
+    .cta-sec { background-color: var(--color-maroon); color: var(--color-white); padding: 5rem 0; text-align: center; border-bottom: 6px solid var(--color-navy); }
+    .cta-sec h2 { color: var(--color-white); font-size: 2.25rem; margin-bottom: 1.5rem; }
+    .cta-sec .btn-cta { background-color: var(--color-white); color: var(--color-maroon); padding: 1rem 3rem; font-size: 1rem; border: 1px solid var(--color-white); }
+    .cta-sec .btn-cta:hover { background-color: transparent; color: var(--color-white); }
 
-    /* Footer */
-    footer { background: #111827; color: white; padding: 4rem 0 2rem; }
-    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
-    .footer-brand h3 { color: white; font-size: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-    .footer-brand p { color: #9CA3AF; font-size: 0.95rem; }
-    .footer-links h4 { color: white; font-size: 1.1rem; margin-bottom: 1.5rem; }
-    .footer-links ul li { margin-bottom: 0.8rem; }
-    .footer-links ul a { color: #9CA3AF; font-size: 0.95rem; }
-    .footer-links ul a:hover { color: var(--color-saffron); }
-    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: #6B7280; font-size: 0.9rem; }
+    /* Footer - Full Traditional */
+    footer { background-color: var(--color-navy); color: rgba(255, 255, 255, 0.7); padding: 4rem 0 2rem; font-size: 0.9rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand { margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+    .footer-brand h3 { color: var(--color-gold); font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; }
+    .footer-brand p { max-width: 400px; margin-top: 1rem; font-family: var(--font-heading); font-style: italic; color: var(--color-cream); font-size: 1rem; }
+    .footer h4 { color: var(--color-white); font-family: var(--font-body); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); display: inline-block; }
+    .footer ul li { margin-bottom: 0.75rem; }
+    .footer ul a { color: rgba(255, 255, 255, 0.7); transition: color 0.3s ease; }
+    .footer ul a:hover { color: var(--color-gold); }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; text-align: center; font-size: 0.85rem; }
 
-    /* Floating WhatsApp */
-    .whatsapp-float {
-      position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
-      background: #25D366; color: white; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); z-index: 1000;
-      transition: all 0.3s ease; animation: bounce 2s infinite;
-    }
-    .whatsapp-float:hover { transform: scale(1.1); animation: none; }
-    .whatsapp-float svg { width: 35px; height: 35px; fill: white; }
-    
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-15px); }
-      60% { transform: translateY(-7px); }
-    }
+    /* Extremely Subtle Fade-in Animation */
+    .fade-classic { opacity: 0; transform: translateY(15px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-classic.visible { opacity: 1; transform: translateY(0); }
 
-    /* Animations */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-    /* Responsive */
-    @media(max-width: 992px) {
+    /* Responsive Design */
+    @media(max-width: 900px) {
       .hero-container { flex-direction: column; text-align: center; }
-      .hero-buttons { justify-content: center; }
-      .hero-urgency { justify-content: center; }
-      .hero-img-wrapper img { height: 400px; }
-    }
-    @media(max-width: 768px) {
+      .hero-content { max-width: 100%; }
+      .hero-commands { justify-content: center; }
+      .hero-image { width: 100%; max-width: 500px; margin: 0 auto; }
+      .legacy-grid { flex-direction: column; gap: 3rem; }
+      .legacy-divider { width: 100px; height: 1px; margin: 0 auto; }
+      .features-grid, .courses-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; text-align: center; }
+      .footer-brand { justify-content: center; left: 0; align-items: center; flex-direction: column;}
       .nav-links { display: none; }
       .mobile-menu-btn { display: block; }
-      .stats-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .cta-box { padding: 3rem 1.5rem; }
-      .section-title h2 { font-size: 2rem; }
+      .result-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .result-student, .result-metric { width: 100%; justify-content: flex-start; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Classic Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="nav-brand">
-        <div class="nav-badge">N</div>
-        Niram Tuition Centre
+        <div class="nav-crest">N</div>
+        <span class="nav-brand-text">Niram Tuition</span>
       </a>
       <div class="nav-links">
-        <a href="#about">Why Us</a>
-        <a href="#courses">Courses</a>
+        <a href="#about">Institution</a>
+        <a href="#courses">Curriculum</a>
         <a href="#results">Results</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Contact Us</a>
+        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-navy" style="padding: 0.5rem 1.25rem;">Contact Us</a>
       </div>
       <button class="mobile-menu-btn">☰</button>
     </div>
@@ -274,43 +246,70 @@
   <section class="hero">
     <div class="container">
       <div class="hero-container">
-        <div class="hero-content fade-in">
-          <span class="hero-badge">🏆 Best Coaching in Tamil Nadu</span>
-          <h1>Improve Your Child’s Marks by <span class="highlight">20–40%</span> in Just 3 Months</h1>
-          <p>Expert guidance, small batch sizes, and proven teaching methods for consistent academic improvement. Give your child the edge they need.</p>
-          <div class="hero-buttons">
-            <a href="#demo" class="btn btn-primary">Book Free Demo Class</a>
-            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Chat on WhatsApp
-            </a>
+        <div class="hero-content fade-classic">
+          <span class="hero-label">Excellence in Education</span>
+          <h1>Building Strong Academic Foundations for Lifelong Success</h1>
+          <p>“Dedicated teaching, disciplined learning, and consistent academic excellence for every student. Empowering the scholars of tomorrow.”</p>
+          <div class="hero-commands">
+            <a href="#demo" class="btn btn-maroon">Book a Demo Class</a>
+            <a href="about.html" class="btn btn-outline-navy">Discover Our Legacy</a>
           </div>
-          <div class="hero-urgency">Limited seats available for upcoming batch</div>
         </div>
-        <div class="hero-image fade-in">
-          <div class="hero-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" alt="Happy students studying effectively">
+        <div class="hero-image fade-classic">
+          <div class="hero-img-inner">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800" alt="Students in a traditional, disciplined academic learning environment">
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Trust Stats -->
-      <div class="stats-row fade-in">
-        <div class="glass-card">
-          <div class="stats-grid">
-            <div class="stat-card">
-              <h3>500+</h3>
-              <p>Students Trained</p>
-            </div>
-            <div class="stat-card">
-              <h3>10+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div class="stat-card">
-              <h3>100%</h3>
-              <p>Top Results Every Year</p>
-            </div>
-          </div>
+  <!-- Legacy & Trust Banner -->
+  <div class="legacy-sec">
+    <div class="container">
+      <div class="legacy-grid fade-classic">
+        <div class="legacy-item">
+          <h3>Established Focus</h3>
+          <p>Structured Discipline</p>
+        </div>
+        <div class="legacy-divider"></div>
+        <div class="legacy-item">
+          <h3>10+ Years</h3>
+          <p>Academic Experience</p>
+        </div>
+        <div class="legacy-divider"></div>
+        <div class="legacy-item">
+          <h3>Proven Merits</h3>
+          <p>Consistent Exam Results</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us / Academic Features -->
+  <section class="features-sec" id="about">
+    <div class="container">
+      <div class="section-title fade-classic">
+        <h2>A Tradition of Academic Excellence</h2>
+        <div class="divider"></div>
+        <p>At Niram Tuition Centre, we do not believe in shortcuts. We foster a disciplined standard of traditional studying integrated with meticulous guidance.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-classic">
+          <h3>Individual Attention</h3>
+          <p>Through closely monitored, restricted batch sizes, we recognize and cultivate each student's specific academic strengths and target areas for improvement effectively.</p>
+        </div>
+        <div class="feature-card fade-classic">
+          <h3>Structured Learning Approach</h3>
+          <p>Our curriculum adherence is rigorous and methodical, ensuring no foundational concept is brushed over. Learning milestones are structured deliberately.</p>
+        </div>
+        <div class="feature-card fade-classic">
+          <h3>Regular Assessments</h3>
+          <p>Testing is a vital tradition. We administer weekly written assessments to guarantee students cultivate exam-endurance, time management, and clarity of thought under strict conditions.</p>
+        </div>
+        <div class="feature-card fade-classic">
+          <h3>Strong Concept Foundation</h3>
+          <p>We do not promote rote memorization. Our faculty is dedicated exclusively to embedding deep theoretical understanding leading directly to academic sovereignty.</p>
         </div>
       </div>
     </div>
@@ -319,287 +318,212 @@
   <!-- Results Section -->
   <section class="results-sec" id="results">
     <div class="container">
-      <div class="section-title fade-in">
-        <h2>Our <span class="highlight">Student Results</span></h2>
-        <p>Real progress from our dedicated students. Witness the transformation that concept-based learning brings.</p>
+      <div class="section-title fade-classic">
+        <h2>Verifiable Academic Results</h2>
+        <div class="divider"></div>
+        <div class="results-banner">
+          <h3>“Students consistently improve from 60% to 85%+ under our guided, structured training.”</h3>
+        </div>
       </div>
-      <div class="results-grid">
-        <div class="glass-card result-card fade-in">
-          <h4 style="font-size:1.2rem; margin-bottom:0.5rem;">Rahul S. (Class 10 - CBSE)</h4>
-          <p class="highlight" style="font-weight:600; font-size:0.9rem;">Math & Science Focus</p>
-          <div class="result-marks">
-            <div class="mark-box">
-              <span>Before joining</span>
-              <strong>62%</strong>
-            </div>
-            <div class="mark-arrow">➔</div>
-            <div class="mark-box after">
-              <span>After 3 Months</span>
-              <strong>89%</strong>
-            </div>
+      <div class="results-list fade-classic">
+        <div class="result-row">
+          <div class="result-student">Rahul Subramanian, Class 10 CBSE</div>
+          <div class="result-metric">
+            <span class="before">Previous: 62%</span>
+            <span class="arrow">➔</span>
+            <span class="after">Final Board Result: 91%</span>
           </div>
-          <p style="font-size:0.9rem; color:var(--color-text-muted);">"Rahul now loves Math and completes homework without being told."</p>
         </div>
-        <div class="glass-card result-card fade-in">
-          <h4 style="font-size:1.2rem; margin-bottom:0.5rem;">Karthika M. (Class 12 - State)</h4>
-          <p class="highlight" style="font-weight:600; font-size:0.9rem;">Physics & Chemistry</p>
-          <div class="result-marks">
-            <div class="mark-box">
-              <span>Before joining</span>
-              <strong>58%</strong>
-            </div>
-            <div class="mark-arrow">➔</div>
-            <div class="mark-box after">
-              <span>Board Exam</span>
-              <strong>92%</strong>
-            </div>
+        <div class="result-row">
+          <div class="result-student">Karthika Menon, Class 12 State Board</div>
+          <div class="result-metric">
+            <span class="before">Previous: 58%</span>
+            <span class="arrow">➔</span>
+            <span class="after">Final Board Result: 94%</span>
           </div>
-          <p style="font-size:0.9rem; color:var(--color-text-muted);">"Achieved school top-10 rank. The regular tests made all the difference."</p>
         </div>
-        <div class="glass-card result-card fade-in">
-          <h4 style="font-size:1.2rem; margin-bottom:0.5rem;">Arun V. (Class 9 - ICSE)</h4>
-          <p class="highlight" style="font-weight:600; font-size:0.9rem;">All Subjects</p>
-          <div class="result-marks">
-            <div class="mark-box">
-              <span>Before joining</span>
-              <strong>70%</strong>
-            </div>
-            <div class="mark-arrow">➔</div>
-            <div class="mark-box after">
-              <span>Final Exam</span>
-              <strong>95%</strong>
-            </div>
+        <div class="result-row">
+          <div class="result-student">Arun Venkatesh, Class 9 ICSE</div>
+          <div class="result-metric">
+            <span class="before">Previous: 71%</span>
+            <span class="arrow">➔</span>
+            <span class="after">Final Examination: 95%</span>
           </div>
-          <p style="font-size:0.9rem; color:var(--color-text-muted);">"Conceptual clarity improved drastically. Highly recommend Niram."</p>
         </div>
+        <div class="result-row">
+          <div class="result-student">Sneha Rajan, Class 11 CBSE</div>
+          <div class="result-metric">
+            <span class="before">Previous: 65%</span>
+            <span class="arrow">➔</span>
+            <span class="after">Final Examination: 89%</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#demo" class="btn btn-outline-navy">Join the Tradition of Success</a>
       </div>
     </div>
   </section>
 
-  <!-- USP Section -->
-  <section class="usp-sec" id="about">
-    <div class="container">
-      <div class="section-title fade-in">
-        <h2>Why Choose <span class="highlight">Niram Tuition Centre?</span></h2>
-        <p>We don't just teach for exams; we build a strong foundation. Here is how we guarantee academic success.</p>
-      </div>
-      <div class="usp-grid">
-        <div class="usp-card fade-in">
-          <div class="usp-icon">👥</div>
-          <h3>Small Batch Sizes</h3>
-          <p>Maximum 10-15 students per batch ensures your child is never lost in a crowd. We guarantee personal attention.</p>
-        </div>
-        <div class="usp-card fade-in">
-          <div class="usp-icon">🎯</div>
-          <h3>Individual Attention</h3>
-          <p>We identify your child's weak spots and work specifically on overcoming their unique academic hurdles.</p>
-        </div>
-        <div class="usp-card fade-in">
-          <div class="usp-icon">📝</div>
-          <h3>Weekly Revision Tests</h3>
-          <p>Continuous assessment helps reduce exam fear and ensures concepts are retained, not just memorized momentarily.</p>
-        </div>
-        <div class="usp-card fade-in">
-          <div class="usp-icon">📊</div>
-          <h3>Parent Progress Updates</h3>
-          <p>Regular transparent reports and meetings. You will always know precisely how your child is performing.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Courses Section -->
+  <!-- Courses / Curriculum -->
   <section class="courses-sec" id="courses">
     <div class="container">
-      <div class="section-title fade-in">
-        <h2>Our <span class="highlight">Tutoring Programs</span></h2>
-        <p>Specialized coaching designed for different educational stages.</p>
+      <div class="section-title fade-classic">
+        <h2>Our Official Curriculum Offerings</h2>
+        <div class="divider"></div>
+        <p>Comprehensive subject mastery tailored to appropriate academic grade levels.</p>
       </div>
       <div class="courses-grid">
-        <div class="glass-card course-card fade-in">
-          <span class="course-badge">Foundation</span>
-          <h3>Classes 6 to 8</h3>
-          <p>Building strong fundamentals for high school readiness.</p>
-          <ul class="course-features">
-            <li>Mathematics & Sciences (Physics, Chem, Bio)</li>
-            <li>CBSE, ICSE & Matriculation Boards</li>
-            <li>Concept-based learning approach</li>
-            <li>Weekly worksheets and practice</li>
+        <div class="course-card fade-classic">
+          <h3>Foundations</h3>
+          <h4>Classes VI to VIII</h4>
+          <ul>
+            <li>Mathematics Mastery</li>
+            <li>Basic Sciences & Physics</li>
+            <li>Methodological Approaches</li>
+            <li>CBSE, ICSE & Matriculation</li>
           </ul>
-          <a href="#demo" class="btn btn-outline" style="width:100%">Book Demo</a>
         </div>
-        <div class="glass-card course-card fade-in">
-          <span class="course-badge" style="background: rgba(232,137,26,0.1); color: var(--color-saffron);">Board Prep</span>
-          <h3>Classes 9 & 10</h3>
-          <p>Intensive preparation for crucial board examinations.</p>
-          <ul class="course-features">
-            <li>All core subjects with specialized faculty</li>
-            <li>Past 10-year question paper solving</li>
-            <li>Time management strategies for exams</li>
-            <li>Regular mock board exams</li>
+        <div class="course-card fade-classic">
+          <h3>Board Preparatory</h3>
+          <h4>Classes IX & X</h4>
+          <ul>
+            <li>Core Subject Deep Dive</li>
+            <li>Decade-long Paper Analysis</li>
+            <li>Rigorous Exam Simulation</li>
+            <li>Special Exam Strategies</li>
           </ul>
-          <a href="#demo" class="btn btn-primary" style="width:100%">Book Demo</a>
         </div>
-        <div class="glass-card course-card fade-in">
-          <span class="course-badge" style="background: rgba(107, 63, 160, 0.1); color: #6B3FA0;">Advanced</span>
-          <h3>Classes 11 & 12</h3>
-          <p>In-depth conceptual mastery for higher secondary.</p>
-          <ul class="course-features">
-            <li>Physics, Chemistry, Mathematics, Biology</li>
-            <li>Customized study materials provided</li>
-            <li>Focus on competitive exam foundations</li>
-            <li>Doubt clearing sessions anytime</li>
+        <div class="course-card fade-classic">
+          <h3>Advanced Scholars</h3>
+          <h4>Classes XI & XII</h4>
+          <ul>
+            <li>Advanced Physics & Chem</li>
+            <li>Higher Mathematics Focus</li>
+            <li>Detailed Theoretical Biology</li>
+            <li>Doubt Resolution Seminars</li>
           </ul>
-          <a href="#demo" class="btn btn-outline" style="width:100%">Book Demo</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Trust Section (Testimonials) -->
-  <section class="trust-sec" id="testimonials">
+  <!-- Testimonials Section -->
+  <section class="testi-sec" id="testimonials">
     <div class="container">
-      <div class="section-title fade-in">
-        <h2>Why Parents <span class="highlight">Trust Us</span></h2>
-        <p>Don't just take our word for it. Hear from the parents who have seen the Niram difference.</p>
+      <div class="section-title fade-classic">
+        <h2>What Our Families Say</h2>
+        <div class="divider"></div>
+        <p>Endorsements from the parents who rely on our institution for their children's futures.</p>
       </div>
-      <div class="testimonials-grid">
-        <div class="glass-card testi-card fade-in">
-          <div class="testi-rating">★★★★★</div>
-          <p class="testi-text">"My son improved from 65% to 88% in just 2 months! The individual attention he gets here is phenomenal. The teachers genuinely care about his progress."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">SR</div>
-            <div class="testi-info">
-              <h4>Sriram's Mother</h4>
-              <p>Class 10 CBSE Student</p>
-            </div>
-          </div>
+      <div class="testi-grid">
+        <div class="testi-card fade-classic">
+          <p class="testi-quote">The teaching approach is highly structured, disciplined, and remarkably effective. My child has shown significant improvement in a very short span of time. The focus on fundamentals is unparalleled.</p>
+          <div class="testi-author">— V. Ramanathan, Parent of Class 10 Student</div>
         </div>
-        <div class="glass-card testi-card fade-in">
-          <div class="testi-rating">★★★★★</div>
-          <p class="testi-text">"We tried several home tutors before finding Niram Tuition Centre. The structured environment, weekly tests, and regular updates provide peace of mind."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">VM</div>
-            <div class="testi-info">
-              <h4>Vignesh Menon</h4>
-              <p>Parent of Class 12 Student</p>
-            </div>
-          </div>
+        <div class="testi-card fade-classic">
+          <p class="testi-quote">We respect the strict code of conduct and assessment rigor Niram maintains. It taught my daughter responsibility over her own academic results. Highly prestigious environment.</p>
+          <div class="testi-author">— Meenakshi K., Parent of Class 12 Student</div>
         </div>
-        <div class="glass-card testi-card fade-in">
-          <div class="testi-rating">★★★★★</div>
-          <p class="testi-text">"The way they simplified complex Physics concepts completely changed my daughter's attitude towards the subject. She now looks forward to her classes."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">AK</div>
-            <div class="testi-info">
-              <h4>Anitha Krishnan</h4>
-              <p>Class 9 ICSE Parent</p>
-            </div>
-          </div>
+        <div class="testi-card fade-classic">
+          <p class="testi-quote">A long-standing institution that honors old-school teaching methodologies blended perfectly with the current board curriculums. I wouldn't trust any other center with my son's foundational years.</p>
+          <div class="testi-author">— Dr. S. Prakash, Parent of Class 8 Student</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQs -->
+  <!-- FAQ Section (Clean & Formal) -->
   <section class="faq-sec">
     <div class="container">
-      <div class="section-title fade-in">
-        <h2>Frequently Asked <span class="highlight">Questions</span></h2>
-        <p>Everything you need to know before joining.</p>
+      <div class="section-title fade-classic">
+        <h2>Frequently Addressed Inquiries</h2>
+        <div class="divider"></div>
       </div>
-      <div class="faq-container">
-        <div class="faq-item fade-in">
-          <div class="faq-q">How many students are there in a single batch?</div>
-          <div class="faq-a">We strictly maintain small batch sizes of 10-15 students. This allows our expert teachers to provide individual attention and address specific doubts immediately.</div>
+      <div class="faq-wrapper">
+        <div class="faq-item fade-classic">
+          <div class="faq-q">What are the restricted batch sizes?</div>
+          <div class="faq-a">We firmly cap our attendance at 10-15 students per batch. This is a non-negotiable rule to preserve the integrity of individual attention during our sessions.</div>
         </div>
-        <div class="faq-item fade-in">
-          <div class="faq-q">Do you provide study materials and notes?</div>
-          <div class="faq-a">Yes, we provide comprehensive, expertly crafted study materials, formula sheets, and chapter-wise question banks tailored to the specific board syllabus.</div>
+        <div class="faq-item fade-classic">
+          <div class="faq-q">Is official study material provided?</div>
+          <div class="faq-a">Yes. Registered students receive formalized workbooks, formula compilations, and exclusive question banks drafted by our senior educators.</div>
         </div>
-        <div class="faq-item fade-in">
-          <div class="faq-q">How often are tests conducted?</div>
-          <div class="faq-a">We conduct weekly revision tests on topics covered during that week. Additionally, we hold monthly cumulative mock exams to prepare students for school tests.</div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-q">How do you track and report progress to parents?</div>
-          <div class="faq-a">Parents receive detailed SMS/WhatsApp reports after every major test. We also schedule brief parent-teacher meetings once a month to discuss the child's academic trajectory.</div>
+        <div class="faq-item fade-classic">
+          <div class="faq-q">How is parent communication handled?</div>
+          <div class="faq-a">We believe in complete formal transparency. Parents receive structured monthly reports regarding examination scores and punctuality, along with directly scheduled parent-faculty meetings.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Box -->
+  <!-- Final CTA (Subtle / Classic) -->
   <section class="cta-sec" id="demo">
-    <div class="container fade-in">
-      <div class="cta-box glass-card">
-        <h2>Start Improving Marks Now</h2>
-        <p>Give your child the academic support they deserve. Schedule a free, no-obligation demo class to experience our teaching methodology.</p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="enquiry.html" class="btn btn-primary">Book a Free Demo Class Today</a>
-          <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp">Message on WhatsApp</a>
-        </div>
+    <div class="container fade-classic">
+      <h2>Begin Your Child’s Academic Journey With Confidence</h2>
+      <p style="margin-bottom: 2rem; font-family: var(--font-heading); font-size: 1.1rem; font-style: italic;">“Secure a seat in our upcoming scholarly cohort.”</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="enquiry.html" class="btn btn-cta">Schedule a Formal Visit</a>
+        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-outline-gold" style="border-width: 2px;">Contact via WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Dark Premium Footer -->
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>
-            <div style="width:30px;height:30px;background:var(--color-saffron);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-size:14px">N</div>
-            Niram Tuition
-          </h3>
-          <p>Expert coaching combining traditional values with modern teaching methodologies. Empowering students to excel.</p>
+        <div>
+          <div class="footer-brand">
+            <div class="nav-crest" style="border-color: rgba(255,255,255,0.3); color: var(--color-gold);">N</div>
+            <h3 style="color: var(--color-white)">Niram Tuition Centre</h3>
+          </div>
+          <p>“Building Strong Academic Foundations for Lifelong Success.” Our institution is committed entirely to traditional, disciplined, and result-oriented education.</p>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4>Institutional Links</h4>
           <ul>
-            <li><a href="#about">Why Choose Us</a></li>
-            <li><a href="#courses">Courses Offerred</a></li>
-            <li><a href="#results">Student Results</a></li>
-            <li><a href="#testimonials">Parent Reviews</a></li>
+            <li><a href="#about">Our Heritage</a></li>
+            <li><a href="#courses">Academic Courses</a></li>
+            <li><a href="#results">Track Record</a></li>
+            <li><a href="#testimonials">Parent Endorsements</a></li>
           </ul>
         </div>
-        <div class="footer-links">
-          <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <h4>Official Contact</h4>
           <ul>
-            <li>📍 123 Education St, Coimbatore</li>
-            <li>📞 +91 98765 43210</li>
-            <li>✉️ info@niramtc.com</li>
+            <li style="color: var(--color-cream)">Registry Office:</li>
+            <li>123 Education St, Coimbatore, Tamil Nadu</li>
+            <li style="margin-top: 1rem; color: var(--color-cream)">Communication Line:</li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li style="margin-top: 1rem; color: var(--color-cream)">Electronic Mail:</li>
+            <li><a href="mailto:info@niramtc.com">admissions@niramtc.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Niram Tuition Centre. All rights reserved.</p>
+        <p>&copy; 2026 Niram Tuition Centre. Established Tradition of Excellence.</p>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/919876543210?text=Hi!%20I%20would%20like%20to%20book%20a%20free%20demo%20class." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <!-- Scripts -->
+  <!-- Scripts for classic subtle fade-in -->
   <script>
-    // Navbar scroll effect
+    // Navbar scroll 
     window.addEventListener('scroll', () => {
       const navbar = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+      if (window.scrollY > 30) {
+        navbar.style.boxShadow = '0 4px 15px rgba(11, 31, 58, 0.08)';
       } else {
-        navbar.classList.remove('scrolled');
+        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.03)';
       }
     });
 
-    // Intersection Observer for scroll animations
+    // Subtle Fade Observer
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.15
+      threshold: 0.12
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -611,9 +535,7 @@
       });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in').forEach(element => {
-      observer.observe(element);
-    });
+    document.querySelectorAll('.fade-classic').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
