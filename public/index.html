@@ -59,15 +59,15 @@ h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;color:var(--color-teal)}
 .nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
 /* HERO */
-.hero{position:relative;min-height:85vh;display:flex;align-items:center;justify-content:center;background:var(--color-cream);overflow:hidden;padding-top:var(--nav-height)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--color-cream);overflow:hidden;padding-top:var(--nav-height);padding-bottom:0}
 .hero-pattern{position:absolute;inset:0;z-index:0;pointer-events:none}
-.hero-inner{display:flex;align-items:center;gap:3rem;position:relative;z-index:1;padding:2rem 0}
+.hero-inner{display:flex;align-items:center;gap:3rem;position:relative;z-index:1;padding:0}
 .hero-text{flex:0 0 60%;max-width:60%}
 .hero-label{display:inline-block;font-family:var(--font-body);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--color-saffron);margin-bottom:1rem;opacity:0;animation:fadeUp .8s ease forwards}
 .hero-title{color:var(--color-teal);margin-bottom:1rem;opacity:0;animation:fadeUp .8s ease .15s forwards}
 .hero-quote{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--color-text-secondary);margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease .3s forwards}
 .hero-cta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp .8s ease .45s forwards}
-.hero-illustration{flex:0 0 40%;max-width:40%;display:flex;align-items:center;justify-content:center;animation:float 4s ease-in-out infinite}
+.hero-illustration{flex:0 0 40%;max-width:40%;display:flex;align-items:center;justify-content:center;align-self:center;animation:float 4s ease-in-out infinite}
 .hero-illustration svg{width:320px;height:320px}
 .btn-saffron{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:var(--color-saffron);color:#fff;font-family:var(--font-body);font-weight:600;font-size:1rem;border-radius:999px;transition:all .3s}
 .btn-saffron:hover{background:#d47a14;transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,137,26,.35)}
