@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════════════════════════
    NIRAM TUITION CENTRE — ANIMATIONS
    animations.css — micro-animations, transitions, keyframes
+   Theme: Warm Academic Excellence
    ═══════════════════════════════════════════════════════════ */
 
 /* ── Scroll Reveal ── */
@@ -9,7 +10,6 @@
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -20,7 +20,6 @@
   transform: translateX(-40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal-left.visible {
   opacity: 1;
   transform: translateX(0);
@@ -31,7 +30,6 @@
   transform: translateX(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
@@ -42,7 +40,6 @@
   transform: scale(0.9);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 .reveal-scale.visible {
   opacity: 1;
   transform: scale(1);
@@ -58,103 +55,54 @@
 .stagger-children .reveal:nth-child(7) { transition-delay: 0.35s; }
 .stagger-children .reveal:nth-child(8) { transition-delay: 0.4s; }
 
-
 /* ── Counter Animation ── */
 @keyframes count-up {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-
 /* ── Gradient Shift ── */
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
 }
-
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradient-shift 6s ease infinite;
 }
 
-
-/* ── Glow Pulse ── */
+/* ── Glow Pulse (saffron) ── */
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
-  50% { box-shadow: 0 0 25px rgba(59, 130, 246, 0.6); }
+  0%, 100% { box-shadow: 0 0 10px rgba(232, 137, 26, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(232, 137, 26, 0.4); }
 }
-
 
 /* ── Float ── */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
 }
-
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
 
-
-/* ── Shimmer / Shine ── */
-@keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-
-.animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    transparent 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 3s infinite;
-}
-
-
-/* ── Typewriter ── */
-@keyframes blink-cursor {
-  0%, 100% { border-color: var(--blue-500); }
-  50% { border-color: transparent; }
-}
-
-.typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid var(--blue-500);
-  animation: blink-cursor 0.8s step-end infinite;
-}
-
-
-/* ── Fade In Up (for modals, etc.) ── */
+/* ── Fade In Up ── */
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
 .animate-fade-in-up {
   animation: fade-in-up 0.4s ease;
 }
-
 
 /* ── Rotate ── */
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 .animate-rotate {
   animation: rotate 20s linear infinite;
 }
-
 
 /* ── Reduce motion preference ── */
 @media (prefers-reduced-motion: reduce) {
@@ -166,11 +114,7 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-
-  .reveal,
-  .reveal-left,
-  .reveal-right,
-  .reveal-scale {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
     opacity: 1;
     transform: none;
   }
