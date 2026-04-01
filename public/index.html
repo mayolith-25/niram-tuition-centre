@@ -3,384 +3,617 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Niram Tuition Centre — Path to Endeavour | Best Coaching in Tamil Nadu</title>
-  <meta name="description" content="Niram Tuition Centre offers expert coaching for CBSE, ICSE, MATRIC & NIOS boards. Experienced faculty, individual attention, and committed teaching excellence for classes 6-12.">
-  <meta name="keywords" content="tuition centre, coaching centre, CBSE tuition, ICSE tuition, MATRIC tuition, NIOS tuition, Tamil Nadu, best coaching">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Niram Tuition Centre — Path to Endeavour">
-  <meta property="og:description" content="Expert coaching for CBSE, ICSE, MATRIC & NIOS boards with experienced faculty and individual attention.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://niramtuitioncentre.com">
-
-  <!-- Favicon -->
+  <meta name="description" content="Niram Tuition Centre — Path to Endeavour. Best coaching in Tamil Nadu for CBSE, ICSE, Matriculation and NIOS boards.">
+  <title>Niram Tuition Centre — Path to Endeavour</title>
   <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Nunito', sans-serif;
+  --color-cream: #FDF8F0;
+  --color-cream-dark: #F5EDD8;
+  --color-parchment: #EDE0C4;
+  --color-saffron: #E8891A;
+  --color-saffron-light: #FDF0DC;
+  --color-teal: #0F6E56;
+  --color-teal-dark: #085041;
+  --color-teal-light: #E1F5EE;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-text-muted: #7A7A7A;
+  --color-text-on-dark: #FDF8F0;
+  --color-white: #FFFFFF;
+  --color-shadow: rgba(15, 110, 86, 0.1);
+  --nav-height: 72px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);font-size:1rem;line-height:1.75;color:var(--color-text-primary);background:var(--color-cream);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);line-height:1.2}
+h1{font-size:clamp(2.4rem,5vw,4rem);font-weight:700}
+h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;color:var(--color-teal)}
+::selection{background:var(--color-saffron);color:#fff}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 2rem}
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* NAV */
+.navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-height);z-index:1000;background:rgba(253,248,240,0.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--color-parchment);transition:box-shadow .3s}
+.navbar.scrolled{box-shadow:0 2px 20px var(--color-shadow)}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+.nav-brand{display:flex;align-items:center;gap:.75rem}
+.nav-badge{width:44px;height:44px;border-radius:50%;background:var(--color-saffron);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:700;font-size:1.1rem}
+.nav-brand-text{font-family:var(--font-display);font-size:1.25rem;font-weight:700;color:var(--color-teal)}
+.nav-links{display:flex;align-items:center;gap:.25rem}
+.nav-links a{color:var(--color-text-secondary);font-family:var(--font-body);font-size:.9rem;font-weight:500;padding:.5rem .875rem;border-radius:6px;transition:all .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--color-saffron)}
+.nav-cta{background:var(--color-saffron)!important;color:#fff!important;font-weight:600!important;padding:.5rem 1.5rem!important;border-radius:999px!important}
+.nav-cta:hover{background:#d47a14!important;transform:translateY(-1px)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;padding:.5rem;cursor:pointer}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--color-teal);border-radius:2px;transition:all .3s}
+.nav-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-toggle.active span:nth-child(2){opacity:0}
+.nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/globals.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/home.css">
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--color-cream);overflow:hidden;padding-top:var(--nav-height)}
+.hero-pattern{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-inner{display:flex;align-items:center;gap:3rem;position:relative;z-index:1;padding:3rem 0}
+.hero-text{flex:0 0 60%;max-width:60%}
+.hero-label{display:inline-block;font-family:var(--font-body);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--color-saffron);margin-bottom:1rem;opacity:0;animation:fadeUp .8s ease forwards}
+.hero-title{color:var(--color-teal);margin-bottom:1rem;opacity:0;animation:fadeUp .8s ease .15s forwards}
+.hero-quote{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--color-text-secondary);margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease .3s forwards}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp .8s ease .45s forwards}
+.hero-illustration{flex:0 0 40%;max-width:40%;display:flex;justify-content:center;animation:float 4s ease-in-out infinite}
+.hero-illustration svg{width:280px;height:280px}
+.btn-saffron{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:var(--color-saffron);color:#fff;font-family:var(--font-body);font-weight:600;font-size:1rem;border-radius:999px;transition:all .3s}
+.btn-saffron:hover{background:#d47a14;transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,137,26,.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;border:2px solid var(--color-teal);color:var(--color-teal);font-family:var(--font-body);font-weight:600;font-size:1rem;border-radius:999px;transition:all .3s}
+.btn-ghost:hover{background:var(--color-teal);color:#fff;transform:translateY(-2px)}
+
+/* STATS */
+.stats-section{background:var(--color-teal-light);border-top:1px solid var(--color-parchment);border-bottom:1px solid var(--color-parchment);padding:3.5rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.stat-number{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--color-saffron);line-height:1}
+.stat-label{font-family:var(--font-body);font-size:.9rem;color:var(--color-text-secondary);margin-top:.5rem}
+
+/* FEATURE CARDS */
+.features-section{padding:5rem 0;background:var(--color-cream)}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-header h2::after{content:'';display:block;width:60px;height:3px;background:var(--color-saffron);margin:12px auto 0;border-radius:2px}
+.section-header p{max-width:600px;margin:.75rem auto 0;color:var(--color-text-muted);font-size:1.05rem}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.feature-card{background:var(--color-white);border-radius:12px;padding:2rem;border-left:4px solid var(--color-saffron);box-shadow:0 2px 12px var(--color-shadow);transition:all .3s cubic-bezier(.4,0,.2,1)}
+.feature-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px var(--color-shadow)}
+.feature-icon{width:48px;height:48px;border-radius:50%;background:var(--color-saffron-light);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.feature-icon svg{width:24px;height:24px;color:var(--color-saffron)}
+.feature-card h3{font-size:1.1rem;color:var(--color-teal);margin-bottom:.5rem}
+.feature-card p{font-size:.95rem;color:var(--color-text-secondary);margin:0;line-height:1.7}
+
+/* CLASSROOMS */
+.classrooms-section{background:var(--color-teal);padding:5rem 0;color:var(--color-text-on-dark)}
+.classrooms-section h2{color:#fff}
+.classrooms-section h2::after{background:var(--color-saffron)}
+.classrooms-section .section-header p{color:rgba(255,255,255,.7)}
+.classrooms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.classroom-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:2rem;text-align:center;transition:all .3s}
+.classroom-card:hover{background:rgba(255,255,255,.14);border-color:var(--color-saffron)}
+.classroom-icon{width:64px;height:64px;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center}
+.classroom-icon svg{width:48px;height:48px;color:#fff}
+.classroom-card h3{color:#fff;font-size:1.2rem;margin-bottom:.25rem}
+.classroom-subtitle{color:var(--color-saffron);font-size:.85rem;font-weight:600;margin-bottom:1rem}
+.classroom-features{text-align:left}
+.classroom-features li{display:flex;align-items:flex-start;gap:.5rem;padding:.35rem 0;color:rgba(255,255,255,.8);font-size:.9rem}
+.classroom-features svg{width:18px;height:18px;min-width:18px;color:var(--color-saffron);margin-top:3px}
+
+/* BOARDS */
+.boards-section{padding:5rem 0;background:var(--color-cream-dark)}
+.boards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.board-card{text-align:center;padding:2rem 1rem;border-radius:12px;background:var(--color-white);box-shadow:0 2px 12px var(--color-shadow);transition:all .3s}
+.board-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px var(--color-shadow)}
+.board-shield{width:80px;height:90px;margin:0 auto 1rem}
+.board-card h3{font-size:1.1rem;margin-bottom:.25rem}
+.board-card p{font-size:.85rem;color:var(--color-text-muted);margin:0}
+
+/* TESTIMONIALS */
+.testimonials-section{padding:5rem 0;background:var(--color-teal-light)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.testimonial-card{background:var(--color-white);border-radius:12px;padding:2rem;box-shadow:0 2px 12px var(--color-shadow);transition:all .3s}
+.testimonial-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px var(--color-shadow)}
+.testimonial-quote-mark{font-family:var(--font-display);font-size:3.5rem;line-height:1;color:var(--color-saffron);margin-bottom:-.5rem}
+.testimonial-text{font-family:var(--font-display);font-style:italic;font-size:1rem;color:var(--color-text-secondary);line-height:1.7;margin-bottom:1rem}
+.testimonial-author{font-family:var(--font-body);font-weight:700;color:var(--color-text-primary);font-size:.95rem}
+.testimonial-stars{display:flex;gap:2px;margin-bottom:.75rem}
+.testimonial-stars svg{width:18px;height:18px;fill:var(--color-saffron)}
+
+/* CTA BANNER */
+.cta-section{background:var(--color-teal);padding:5rem 0;text-align:center}
+.cta-section h2{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1rem}
+.cta-section p{color:rgba(255,255,255,.75);font-size:1.1rem;max-width:600px;margin:0 auto 2rem}
+.cta-buttons{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:#fff;color:var(--color-teal);font-family:var(--font-body);font-weight:600;font-size:1rem;border-radius:999px;transition:all .3s}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.btn-ghost-white{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;border:2px solid rgba(255,255,255,.5);color:#fff;font-family:var(--font-body);font-weight:600;font-size:1rem;border-radius:999px;transition:all .3s}
+.btn-ghost-white:hover{background:rgba(255,255,255,.15);border-color:#fff}
+
+/* QUOTE BANNER */
+.quote-banner{background:#1A1A1A;padding:4rem 0;text-align:center}
+.quote-line{width:60px;height:2px;background:var(--color-saffron);margin:0 auto 2rem;border-radius:2px}
+.quote-text{font-family:var(--font-body);font-size:clamp(1.2rem,2.5vw,1.8rem);font-weight:300;color:rgba(255,255,255,.6);line-height:1.8;max-width:800px;margin:0 auto}
+.quote-text strong{font-weight:700;color:var(--color-saffron)}
+.quote-line-bottom{width:60px;height:2px;background:var(--color-saffron);margin:2rem auto 0;border-radius:2px}
+
+/* FOOTER */
+.footer{background:var(--color-teal-dark);color:rgba(255,255,255,.75);padding:4rem 0 1.5rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:3rem;margin-bottom:3rem}
+.footer-brand h3{color:#fff;font-family:var(--font-display);font-size:1.5rem;margin-bottom:.75rem}
+.footer-brand p{color:rgba(255,255,255,.6);font-size:.9rem;line-height:1.7;margin:0}
+.footer h4{color:#fff;font-family:var(--font-display);font-size:1rem;margin-bottom:1rem}
+.footer-links li{margin-bottom:.5rem}
+.footer-links a{color:rgba(255,255,255,.6);font-size:.9rem;transition:all .2s}
+.footer-links a:hover{color:var(--color-saffron);transform:translateX(4px);display:inline-block}
+.footer-contact li{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.75rem;font-size:.9rem}
+.footer-contact svg{width:18px;height:18px;min-width:18px;color:var(--color-saffron);margin-top:2px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.5rem;display:flex;justify-content:space-between;font-size:.85rem}
+
+/* WHATSAPP */
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:1000;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s;animation:pulse 3s ease-in-out infinite}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,.5)}
+.whatsapp-float svg{width:32px;height:32px;fill:#fff}
+.whatsapp-tooltip{position:absolute;right:72px;top:50%;transform:translateY(-50%);background:var(--color-teal-dark);color:#fff;padding:8px 16px;border-radius:8px;font-size:.85rem;font-weight:500;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.whatsapp-float:hover .whatsapp-tooltip{opacity:1}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}50%{box-shadow:0 0 0 14px rgba(37,211,102,0)}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.stagger .reveal:nth-child(1){transition-delay:.05s}
+.stagger .reveal:nth-child(2){transition-delay:.1s}
+.stagger .reveal:nth-child(3){transition-delay:.15s}
+.stagger .reveal:nth-child(4){transition-delay:.2s}
+.stagger .reveal:nth-child(5){transition-delay:.25s}
+.stagger .reveal:nth-child(6){transition-delay:.3s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .nav-toggle{display:flex}
+  .nav-links{position:fixed;top:var(--nav-height);left:0;right:0;bottom:0;flex-direction:column;background:rgba(253,248,240,.98);backdrop-filter:blur(12px);padding:1.5rem;gap:.25rem;transform:translateX(100%);transition:transform .4s}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links a{font-size:1.1rem;padding:.75rem 1rem;width:100%;text-align:center}
+  .hero-inner{flex-direction:column;text-align:center}
+  .hero-text{flex:none;max-width:100%}
+  .hero-illustration{display:none}
+  .hero-cta{justify-content:center}
+  .features-grid,.classrooms-grid{grid-template-columns:repeat(2,1fr)}
+  .testimonials-grid{grid-template-columns:1fr;max-width:500px;margin:0 auto}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .features-grid,.boards-grid{grid-template-columns:1fr}
+  .classrooms-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}
+  .footer-bottom{flex-direction:column;gap:.5rem;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
 </head>
 <body>
 
-  <!-- ═══ NAVIGATION ═══ -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">
-        <span>NTC</span>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="classrooms.html">Classrooms</a>
-        <a href="courses.html">Courses</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html">Contact</a>
-        <a href="enquiry.html" class="nav-cta">Enquire Now</a>
+<!-- 1. NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-badge">NTC</div>
+      <span class="nav-brand-text">Niram Tuition Centre</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="classrooms.html">Classrooms</a>
+      <a href="courses.html">Courses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html" class="nav-cta">Enquire Now</a>
+    </div>
+    <div class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- 2. HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-pattern" aria-hidden="true">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="#C8B89A" opacity="0.4"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dots)"/>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-label">Sharing Knowledge</span>
+        <h1 class="hero-title">Niram Tuition Centre</h1>
+        <p class="hero-quote">"Teaching is Inspiring and Learning is Understanding"</p>
+        <div class="hero-cta">
+          <a href="enquiry.html" class="btn-saffron">Enquire Now</a>
+          <a href="about.html" class="btn-ghost">Learn More</a>
+        </div>
       </div>
-      <div class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="hero-illustration">
+        <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <circle cx="140" cy="140" r="130" fill="#E1F5EE" stroke="#0F6E56" stroke-width="2"/>
+          <circle cx="140" cy="140" r="110" fill="#FDF0DC" stroke="#E8891A" stroke-width="1.5" stroke-dasharray="8 4"/>
+          <text x="140" y="115" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="700" fill="#0F6E56">NTC</text>
+          <text x="140" y="148" text-anchor="middle" font-family="'Nunito', sans-serif" font-size="13" font-weight="600" fill="#E8891A" letter-spacing="3">PATH TO ENDEAVOUR</text>
+          <!-- Open book illustration -->
+          <g transform="translate(95, 165)">
+            <path d="M0 30 Q45 10 45 0 Q45 10 90 30 L90 50 Q45 30 45 20 Q45 30 0 50 Z" fill="#0F6E56" opacity="0.15" stroke="#0F6E56" stroke-width="1.5"/>
+            <line x1="45" y1="0" x2="45" y2="20" stroke="#E8891A" stroke-width="1.5"/>
+            <path d="M10 35 L40 22" stroke="#0F6E56" stroke-width="0.8" opacity="0.4"/>
+            <path d="M10 40 L40 27" stroke="#0F6E56" stroke-width="0.8" opacity="0.4"/>
+            <path d="M50 22 L80 35" stroke="#0F6E56" stroke-width="0.8" opacity="0.4"/>
+            <path d="M50 27 L80 40" stroke="#0F6E56" stroke-width="0.8" opacity="0.4"/>
+          </g>
+          <!-- Decorative dots -->
+          <circle cx="50" cy="60" r="4" fill="#E8891A" opacity="0.3"/>
+          <circle cx="230" cy="70" r="3" fill="#0F6E56" opacity="0.3"/>
+          <circle cx="60" cy="220" r="3" fill="#E8891A" opacity="0.25"/>
+          <circle cx="220" cy="210" r="5" fill="#0F6E56" opacity="0.2"/>
+        </svg>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- ═══ HERO SECTION ═══ -->
-  <section class="hero" id="hero">
-    <canvas class="hero-particles" id="hero-particles"></canvas>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-        Sharing Knowledge
+<!-- 3. STATS COUNTER -->
+<section class="stats-section reveal" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-number" data-target="500" data-suffix="+">0</div>
+        <div class="stat-label">Students Taught</div>
       </div>
-      <h1 class="hero-title">
-        Niram <span>Tuition Centre</span>
-      </h1>
-      <p class="hero-tagline">"Path.. to Endeavour"</p>
-      <p class="hero-description">
-        We believe <strong>Teaching is Inspiring</strong> and <strong>Learning is Understanding</strong>.
-        Committed teaching excellence with experienced faculty for every subject.
-      </p>
-      <div class="hero-cta">
-        <a href="enquiry.html" class="btn btn-primary btn-lg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
-          Enquire Now
-        </a>
-        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20am%20interested%20in%20Niram%20Tuition%20Centre" target="_blank" class="btn btn-whatsapp btn-lg">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp Us
-        </a>
+      <div>
+        <div class="stat-number" data-target="4" data-suffix="">0</div>
+        <div class="stat-label">Boards Covered</div>
+      </div>
+      <div>
+        <div class="stat-number" data-target="3" data-suffix="">0</div>
+        <div class="stat-label">Named Classrooms</div>
+      </div>
+      <div>
+        <div class="stat-number" data-target="10" data-suffix="+">0</div>
+        <div class="stat-label">Years of Commitment</div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>Scroll Down</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ STATS SECTION ═══ -->
-  <section class="stats-section">
-    <div class="container">
-      <div class="stats-grid stagger-children">
-        <div class="stat-card reveal">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div class="stat-number" data-counter="500" data-suffix="+">0</div>
-          <div class="stat-label">Students Taught</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
-          </div>
-          <div class="stat-number" data-counter="4">0</div>
-          <div class="stat-label">Boards Covered</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </div>
-          <div class="stat-number" data-counter="3">0</div>
-          <div class="stat-label">Named Classrooms</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <div class="stat-number" data-counter="100" data-suffix="%">0</div>
-          <div class="stat-label">Commitment</div>
-        </div>
-      </div>
+<!-- 4. WHY CHOOSE NTC -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Choose NTC?</h2>
+      <p>Our commitment to educational excellence sets us apart</p>
     </div>
-  </section>
-
-  <!-- ═══ PHILOSOPHY SECTION ═══ -->
-  <section class="philosophy">
-    <div class="container">
-      <div class="philosophy-card reveal">
-        <blockquote>
-          "We believe <span>Teaching is Inspiring</span> and <span>Learning is Understanding</span>"
-        </blockquote>
-        <cite>— Niram Tuition Centre Philosophy</cite>
+    <div class="features-grid stagger">
+      <!-- Experienced Faculty — graduation cap -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+        </div>
+        <h3>Experienced Faculty</h3>
+        <p>Subject-specific teachers with years of expertise dedicated to each subject for focused learning.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ═══ USPs SECTION ═══ -->
-  <section class="usps-section section" id="usps">
-    <div class="container">
-      <div class="section-header">
-        <h2>Why Choose NTC?</h2>
-        <p>Our commitment to educational excellence sets us apart</p>
+      <!-- Individual Attention — person with circle -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><circle cx="18" cy="10" r="3" stroke-dasharray="2 2"/></svg>
+        </div>
+        <h3>Individual Attention</h3>
+        <p>Every student receives personal focus ensuring no one falls behind in understanding concepts.</p>
       </div>
-      <div class="usps-grid stagger-children">
-        <div class="usp-card reveal">
-          <div class="usp-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Experienced Faculty</h3>
-          <p>Subject-specific teachers with years of expertise dedicated to each subject for focused learning.</p>
+      <!-- Detailed Explanations — speech bubble -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg>
         </div>
-        <div class="usp-card reveal">
-          <div class="usp-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-          </div>
-          <h3>Individual Attention</h3>
-          <p>Every student receives personal focus ensuring no one falls behind in understanding concepts.</p>
+        <h3>Detailed Explanations</h3>
+        <p>Deep concept-level teaching that builds understanding, not just rote memorization.</p>
+      </div>
+      <!-- Weekly Tests — checkmark clipboard -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>
         </div>
-        <div class="usp-card reveal">
-          <div class="usp-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          </div>
-          <h3>Detailed Explanations</h3>
-          <p>Deep concept-level teaching that builds understanding, not just rote memorization.</p>
+        <h3>Weekly Revision Tests</h3>
+        <p>Regular assessments to track progress, reinforce learning and identify areas for improvement.</p>
+      </div>
+      <!-- On-Time Completion — clock -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <div class="usp-card reveal">
-          <div class="usp-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3>Weekly Revision Tests</h3>
-          <p>Regular assessments to track progress, reinforce learning and identify areas for improvement.</p>
+        <h3>On-Time Completion</h3>
+        <p>Structured schedule ensuring the full syllabus is covered on time — no last-minute scrambling.</p>
+      </div>
+      <!-- Board Exam Prep — certificate/medal -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/><path d="M10 6l1 2h2l1-2"/></svg>
         </div>
-        <div class="usp-card reveal">
-          <div class="usp-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </div>
-          <h3>On-Time Completion</h3>
-          <p>Structured schedule ensuring the full syllabus is covered on time — no last-minute scrambling.</p>
-        </div>
-        <div class="usp-card reveal">
-          <div class="usp-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Board Exam Prep</h3>
-          <p>Dedicated pre-board exam preparation with continuous coaching on study holidays right up to board exams.</p>
-        </div>
+        <h3>Board Exam Prep</h3>
+        <p>Dedicated pre-board exam preparation with continuous coaching right up to board exams.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ CLASSROOMS SECTION ═══ -->
-  <section class="classrooms-section section" id="classrooms">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Iconic Classrooms</h2>
-        <p>Named after India's greatest leaders — inspiring excellence every day</p>
+<!-- 5. ICONIC CLASSROOMS -->
+<section class="classrooms-section" id="classrooms">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Iconic Classrooms</h2>
+      <p>Named after India's greatest leaders — inspiring excellence every day</p>
+    </div>
+    <div class="classrooms-grid stagger">
+      <!-- Dr. Radhakrishnan — open book (wisdom) -->
+      <div class="classroom-card reveal">
+        <div class="classroom-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16a4 4 0 0 1 4 4v28a3 3 0 0 0-3-3H4z"/><path d="M44 8H28a4 4 0 0 0-4 4v28a3 3 0 0 1 3-3h17z"/></svg>
+        </div>
+        <h3>Dr. Radhakrishnan</h3>
+        <p class="classroom-subtitle">Classroom of Wisdom</p>
+        <ul class="classroom-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Academic wisdom &amp; teaching excellence</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Right ambient for focused learning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Committed teaching of excellence</li>
+        </ul>
       </div>
-      <div class="classrooms-grid stagger-children">
-        <!-- Radhakrishnan -->
-        <div class="classroom-card reveal">
-          <div class="classroom-icon">🎓</div>
-          <h3>Dr. Radhakrishnan</h3>
-          <p class="classroom-subtitle">Classroom of Wisdom</p>
-          <ul class="classroom-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Academic wisdom & teaching excellence
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Right ambient for focused learning
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Committed teaching of excellence
-            </li>
-          </ul>
+      <!-- Dr. Abdul Kalam — rocket (innovation) -->
+      <div class="classroom-card reveal">
+        <div class="classroom-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4c0 0-12 8-12 24l6 6h12l6-6C36 12 24 4 24 4z"/><line x1="24" y1="4" x2="24" y2="20"/><path d="M18 34l-4 8 6-2 4 4 4-4 6 2-4-8"/></svg>
         </div>
-        <!-- Abdul Kalam -->
-        <div class="classroom-card reveal">
-          <div class="classroom-icon">🚀</div>
-          <h3>Dr. Abdul Kalam</h3>
-          <p class="classroom-subtitle">Classroom of Innovation</p>
-          <ul class="classroom-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Direct interactive coaching
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Board questions practice
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Weekly revision tests
-            </li>
-          </ul>
+        <h3>Dr. Abdul Kalam</h3>
+        <p class="classroom-subtitle">Classroom of Innovation</p>
+        <ul class="classroom-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Direct interactive coaching</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Board questions practice</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Weekly revision tests</li>
+        </ul>
+      </div>
+      <!-- MK Gandhi — lotus (character) -->
+      <div class="classroom-card reveal">
+        <div class="classroom-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40c0-8-6-14-14-16 2-6 8-10 14-10s12 4 14 10c-8 2-14 8-14 16z"/><path d="M24 40c0-8 6-14 14-16"/><path d="M24 40c0-8-6-14-14-16"/><circle cx="24" cy="20" r="4"/></svg>
         </div>
-        <!-- MK Gandhi -->
-        <div class="classroom-card reveal">
-          <div class="classroom-icon">🕊️</div>
-          <h3>MK Gandhi</h3>
-          <p class="classroom-subtitle">Classroom of Character</p>
-          <ul class="classroom-features">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Build self-confidence
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Self-initiated learning
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Celebrate talents & develop skills
-            </li>
-          </ul>
-        </div>
+        <h3>MK Gandhi</h3>
+        <p class="classroom-subtitle">Classroom of Character</p>
+        <ul class="classroom-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Build self-confidence</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Self-initiated learning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Celebrate talents &amp; develop skills</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ BOARDS SECTION ═══ -->
-  <section class="boards-section section" id="boards">
-    <div class="container">
-      <div class="section-header">
-        <h2>Boards We Cover</h2>
-        <p>All subjects coaching for every major educational board</p>
+<!-- 6. BOARDS WE COVER -->
+<section class="boards-section" id="boards">
+  <div class="container">
+    <div class="section-header">
+      <h2>Boards We Cover</h2>
+      <p>All subjects coaching for every major educational board</p>
+    </div>
+    <div class="boards-grid stagger">
+      <!-- CBSE — Navy shield -->
+      <div class="board-card reveal">
+        <div class="board-shield">
+          <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><path d="M40 2L6 18v30c0 22 14 34 34 40 20-6 34-18 34-40V18L40 2z" fill="#1B3A5C" stroke="#0E2240" stroke-width="2"/><text x="40" y="50" text-anchor="middle" font-family="'Playfair Display',serif" font-size="20" font-weight="700" fill="#fff">CBSE</text></svg>
+        </div>
+        <h3>CBSE</h3>
+        <p>Central Board of Secondary Education</p>
       </div>
-      <div class="boards-grid stagger-children">
-        <div class="board-card cbse reveal">
-          <div class="board-logo">CB</div>
-          <h3>CBSE</h3>
-          <p>Central Board of Secondary Education</p>
+      <!-- ICSE — Green shield -->
+      <div class="board-card reveal">
+        <div class="board-shield">
+          <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><path d="M40 2L6 18v30c0 22 14 34 34 40 20-6 34-18 34-40V18L40 2z" fill="#0F6E56" stroke="#085041" stroke-width="2"/><text x="40" y="50" text-anchor="middle" font-family="'Playfair Display',serif" font-size="20" font-weight="700" fill="#fff">ICSE</text></svg>
         </div>
-        <div class="board-card icse reveal">
-          <div class="board-logo">IC</div>
-          <h3>ICSE</h3>
-          <p>Indian Certificate of Secondary Education</p>
+        <h3>ICSE</h3>
+        <p>Indian Certificate of Secondary Education</p>
+      </div>
+      <!-- Matriculation — Saffron shield -->
+      <div class="board-card reveal">
+        <div class="board-shield">
+          <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><path d="M40 2L6 18v30c0 22 14 34 34 40 20-6 34-18 34-40V18L40 2z" fill="#E8891A" stroke="#C5741A" stroke-width="2"/><text x="40" y="44" text-anchor="middle" font-family="'Playfair Display',serif" font-size="14" font-weight="700" fill="#fff">MAT-</text><text x="40" y="60" text-anchor="middle" font-family="'Playfair Display',serif" font-size="14" font-weight="700" fill="#fff">RIC</text></svg>
         </div>
-        <div class="board-card matric reveal">
-          <div class="board-logo">MA</div>
-          <h3>MATRIC</h3>
-          <p>Tamil Nadu State Matriculation Board</p>
+        <h3>Matriculation</h3>
+        <p>Tamil Nadu State Matriculation Board</p>
+      </div>
+      <!-- NIOS — Purple shield -->
+      <div class="board-card reveal">
+        <div class="board-shield">
+          <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg"><path d="M40 2L6 18v30c0 22 14 34 34 40 20-6 34-18 34-40V18L40 2z" fill="#6B3FA0" stroke="#52308A" stroke-width="2"/><text x="40" y="50" text-anchor="middle" font-family="'Playfair Display',serif" font-size="20" font-weight="700" fill="#fff">NIOS</text></svg>
         </div>
-        <div class="board-card nios reveal">
-          <div class="board-logo">NI</div>
-          <h3>NIOS</h3>
-          <p>National Institute of Open Schooling</p>
-        </div>
+        <h3>NIOS</h3>
+        <p>National Institute of Open Schooling</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ CTA SECTION ═══ -->
-  <section class="cta-section" id="cta">
-    <div class="container">
-      <div class="cta-content reveal">
-        <h2>Ready to <span>Begin the Journey?</span></h2>
-        <p>Join NTC and experience committed teaching excellence with individual attention for every student.</p>
-        <div class="cta-buttons">
-          <a href="enquiry.html" class="btn btn-primary btn-lg">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            Enquire Now
-          </a>
-          <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20NTC" target="_blank" class="btn btn-whatsapp btn-lg">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp Us
-          </a>
-          <a href="contact.html" class="btn btn-secondary btn-lg">
-            Contact Us
-          </a>
-        </div>
-        <div class="cta-quote">
-          <blockquote>
-            "<strong>DON'T STOP</strong> WHEN YOU ARE TIRED. <strong>STOP</strong> WHEN YOU ARE <strong>DONE.</strong>"
-          </blockquote>
-        </div>
+<!-- 7. TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>What Parents &amp; Students Say</h2>
+      <p>Hear from our NTC family about their learning journey</p>
+    </div>
+    <div class="testimonials-grid stagger">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">&ldquo;</div>
+        <div class="testimonial-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="testimonial-text">My daughter's confidence in Maths and Science improved tremendously after joining NTC. The teachers explain every concept with such patience and clarity. Her board exam results were outstanding!</p>
+        <p class="testimonial-author">Priya R., Parent of Class 10 student</p>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">&ldquo;</div>
+        <div class="testimonial-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="testimonial-text">NTC helped me understand Physics concepts I had struggled with for years. The weekly tests keep me on track and the teachers always make time for individual doubts. I scored 95% in my boards!</p>
+        <p class="testimonial-author">Karthik S., Class 12 student</p>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">&ldquo;</div>
+        <div class="testimonial-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="testimonial-text">Both my children study at NTC and I am very happy with their progress. The classrooms named after our national heroes create such an inspiring atmosphere. Truly a wonderful institution!</p>
+        <p class="testimonial-author">Mrs. Meenakshi, Parent</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>Niram <span>Tuition Centre</span></h3>
-          <p>Committed teaching excellence with experienced faculty. We believe Teaching is Inspiring and Learning is Understanding.</p>
-          <p style="margin-top: 12px; color: rgba(255,255,255,0.4); font-style: italic;">"Path.. to Endeavour"</p>
-        </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="classrooms.html">Our Classrooms</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="enquiry.html">Admission Enquiry</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <ul class="footer-contact">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>Contact us for details</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <span>Email us for enquiries</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Tamil Nadu, India</span>
-            </li>
-          </ul>
-        </div>
+<!-- 8. CTA BANNER -->
+<section class="cta-section reveal" id="cta">
+  <div class="container">
+    <h2>Ready to Begin the Journey?</h2>
+    <p>Join NTC and experience committed teaching excellence with individual attention for every student.</p>
+    <div class="cta-buttons">
+      <a href="enquiry.html" class="btn-white">Enquire Now</a>
+      <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20NTC" target="_blank" class="btn-ghost-white">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. MOTIVATIONAL QUOTE -->
+<section class="quote-banner reveal">
+  <div class="container">
+    <div class="quote-line"></div>
+    <p class="quote-text"><strong>DON'T STOP</strong> WHEN YOU ARE TIRED. <strong>STOP</strong> WHEN YOU ARE <strong>DONE.</strong></p>
+    <div class="quote-line-bottom"></div>
+  </div>
+</section>
+
+<!-- 10. FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Niram Tuition Centre</h3>
+        <p>Committed teaching excellence with experienced faculty. We believe Teaching is Inspiring and Learning is Understanding.</p>
+        <p style="margin-top:12px;color:rgba(255,255,255,.4);font-style:italic">"Path.. to Endeavour"</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Niram Tuition Centre. All rights reserved.</p>
-        <p>Crafted with ❤️ for Education</p>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="classrooms.html">Our Classrooms</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <!-- placeholder address -->
+            <span>123 Education Street, Coimbatore - 641001, Tamil Nadu</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <!-- placeholder phone -->
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <!-- placeholder email -->
+            <span>info@niramtc.com</span>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Niram Tuition Centre. All rights reserved.</p>
+      <p>Crafted with <svg viewBox="0 0 24 24" fill="#E8891A" width="14" height="14" style="display:inline;vertical-align:middle"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> for Education</p>
+    </div>
+  </div>
+</footer>
 
-  <!-- ═══ WHATSAPP FLOAT ═══ -->
-  <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20am%20interested%20in%20NTC" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span class="whatsapp-tooltip">Chat with us!</span>
-  </a>
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20Niram%20Tuition%20Centre" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="whatsapp-tooltip">Chat with us!</span>
+</a>
 
-  <!-- Scripts -->
-  <script src="js/nav.js"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/counter.js"></script>
+<script>
+/* ===== Mobile Nav Toggle ===== */
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+
+/* ===== Navbar scroll shadow ===== */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+});
+
+/* ===== Counter Animation ===== */
+const counters = document.querySelectorAll('.stat-number');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+      entry.target.classList.add('counted');
+      const target = parseInt(entry.target.dataset.target);
+      const suffix = entry.target.dataset.suffix || '';
+      const duration = 2000;
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        entry.target.textContent = Math.round(target * ease) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+  });
+}, { threshold: 0.3 });
+counters.forEach(c => counterObserver.observe(c));
+
+/* ===== Scroll Reveal ===== */
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => revealObserver.observe(el));
+</script>
 </body>
 </html>
